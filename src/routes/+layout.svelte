@@ -1,11 +1,4 @@
 <script lang="ts">
-	// // The ordering of these imports is critical to your app working properly
-	// import '@skeletonlabs/skeleton/themes/theme-crimson.css';
-	// // If you have source.organizeImports set to true in VSCode, then it will auto change this ordering
-	// import '@skeletonlabs/skeleton/styles/skeleton.css';
-	// // Most of your app wide CSS should be put in this file
-	// import '../app.postcss';
-
 	// Your custom Skeleton theme:
 	import '../theme.postcss';
 
@@ -22,6 +15,7 @@
 
 	import FaHamburger from 'svelte-icons/fa/FaHamburger.svelte';
 	import FaRegListAlt from 'svelte-icons/fa/FaRegListAlt.svelte';
+
 </script>
 
 <AppBar
@@ -29,7 +23,9 @@
 	slotDefault="place-self-center"
 	slotTrail="place-content-end"
 	class="fixed top-0 left-0 right-0"
->
+	background="variant-filled-primary"
+
+>	
 	<svelte:fragment slot="lead">
 		<div class="w-[2rem]">
 			<FaRegListAlt />

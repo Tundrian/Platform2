@@ -177,7 +177,7 @@
 	]
 	
 </script>
-<div class="bg-white">
+<div class="bg-white dark:bg-slate-800">
 <!-- Hero Section -->
 <Hero />
 
@@ -185,4 +185,3 @@
 <Categories categories={categories}/>
 
 </div>
-
