@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
 	// // The ordering of these imports is critical to your app working properly
 	// import '@skeletonlabs/skeleton/themes/theme-crimson.css';
 	// // If you have source.organizeImports set to true in VSCode, then it will auto change this ordering
@@ -7,41 +7,46 @@
 	// import '../app.postcss';
 
 	// Your custom Skeleton theme:
-import '../theme.postcss';
+	import '../theme.postcss';
 
-// This contains the bulk of Skeletons required styles:
-import '@skeletonlabs/skeleton/styles/skeleton.css';
+	// This contains the bulk of Skeletons required styles:
+	import '@skeletonlabs/skeleton/styles/skeleton.css';
 
-// Finally, your application's global stylesheet (sometimes labeled 'app.css')
-import '../app.postcss';
+	// Finally, your application's global stylesheet (sometimes labeled 'app.css')
+	import '../app.postcss';
 
-
+	import { LightSwitch } from '@skeletonlabs/skeleton';
 	import { AppBar } from '@skeletonlabs/skeleton';
 	import { TabGroup, Tab, TabAnchor } from '@skeletonlabs/skeleton';
 	import { page } from '$app/stores';
 
-	import FaHamburger from 'svelte-icons/fa/FaHamburger.svelte'
-	import FaRegListAlt from 'svelte-icons/fa/FaRegListAlt.svelte'
+	import FaHamburger from 'svelte-icons/fa/FaHamburger.svelte';
+	import FaRegListAlt from 'svelte-icons/fa/FaRegListAlt.svelte';
 </script>
 
-<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end" class="fixed top-0 left-0 right-0">
+<AppBar
+	gridColumns="grid-cols-3"
+	slotDefault="place-self-center"
+	slotTrail="place-content-end"
+	class="fixed top-0 left-0 right-0"
+>
 	<svelte:fragment slot="lead">
 		<div class="w-[2rem]">
-			<FaRegListAlt/>
+			<FaRegListAlt />
 		</div>
 	</svelte:fragment>
 	Name of Site
 	<svelte:fragment slot="trail">
-		<div class="w-[2rem]">
-			<FaHamburger/>
+		<div class="w-[5rem] flex justify-between">
+			<LightSwitch/>
+			<FaHamburger />
 		</div>
-		
-</svelte:fragment>
+	</svelte:fragment>
 </AppBar>
 
 <slot />
 
-<TabGroup 
+<TabGroup
 	justify="justify-center"
 	active="variant-filled-primary"
 	hover="hover:variant-soft-primary"
@@ -54,13 +59,21 @@ import '../app.postcss';
 		<svelte:fragment slot="lead">(icon)</svelte:fragment>
 		<span>(label)</span>
 	</TabAnchor>
-	<TabAnchor href="/" selected={$page.url.pathname === '/'} class="w-1/3" >
+	<TabAnchor href="/" selected={$page.url.pathname === '/'} class="w-1/3">
 		<svelte:fragment slot="lead">(icon)</svelte:fragment>
 		<span>(label)</span>
 	</TabAnchor>
 	<TabAnchor href="/" selected={$page.url.pathname === '/'} class="w-1/3">
+		
 		<svelte:fragment slot="lead">(icon)</svelte:fragment>
 		<span>(label)</span>
 	</TabAnchor>
 	<!-- ... -->
 </TabGroup>
+
+<footer>
+	<h4>Image Attributions</h4>
+	<ul>
+		<li>Vectors and icons by <a href="https://soco-st.com/?ref=svgrepo.com" target="_blank">Soco St</a> in CC Attribution License via <a href="https://www.svgrepo.com/" target="_blank">SVG Repo</a></li>
+	</ul>
+</footer>
