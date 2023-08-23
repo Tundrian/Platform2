@@ -1,6 +1,6 @@
 <!-- Hero Section -->
 <section class="bg-white dark:bg-slate-800 ">
-	<div class="mx-auto max-w-screen-xl px-4 pt-32 pb-20 lg:flex lg:h-screen lg:items-center">
+	<div class="mx-auto max-w-screen-xl px-4 py-20 lg:flex lg:h-screen lg:items-center">
 		<div class="mx-auto max-w-xl text-center">
 			<h1 class="text-3xl font-extrabold sm:text-5xl text-slate-700 dark:text-slate-200">
 				Website Title
@@ -14,14 +14,14 @@
 			<div class="mt-8 flex flex-wrap justify-center gap-4">
 				<a
 					class="block w-full rounded variant-filled-primary px-12 py-3 text-sm font-medium text-white shadow hover:brightness-110 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
-					href="/get-started"
+					href="/startHere"
 				>
 					Start here
 				</a>
 
 				<a
 					class="block w-full rounded px-12 py-3 text-sm font-medium variant-filled-secondary  shadow hover:brightness-110 focus:outline-none focus:ring active:text-red-500 sm:w-auto"
-					href="/about"
+					href="#categories-anchor"
 				>
 					Browse around
 				</a>

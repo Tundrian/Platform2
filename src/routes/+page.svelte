@@ -11,7 +11,8 @@
 				{
 					name: string,
 					brief: string,
-					image: string
+					image: string,
+					url: string
 				}[]
 			
 		}
@@ -25,42 +26,50 @@
 				{
 					name: "Terms",
 					brief: "Look up commonly used terms",
-					image: 'categories/terms.svg'
+					image: 'categories/terms.svg',
+					url: 'education/terms'
 				},
 				{
 					name: "Courses",
 					brief: "Take a guided course on a topic",
-					image: 'categories/courses.svg'
+					image: 'categories/courses.svg',
+					url: 'courses'
 				},
 				{
 					name: "Unions",
 					brief: "Learn all about unions and how they help society",
-					image: 'categories/unions.svg'
+					image: 'categories/unions.svg',
+					url: "unions"
 				},
 				{
 					name: "Co-operatives",
 					brief: "Discovery a workplace beyond dictatorship of the boss",
-					image: 'categories/cooperatives.svg'
+					image: 'categories/cooperatives.svg',
+					url: "cooperatives"
 				},
 				{
 					name: "Myth busting",
 					brief: "With so much false information around, learn what the truths are",
-					image: 'categories/myths.svg'
+					image: 'categories/myths.svg',
+					url: "mythbusting"
 				},
 				{
 					name: "Answering Questions",
 					brief: "Look up common questions or submit a new one to add to the roster",
-					image: 'categories/answers.svg'
+					image: 'categories/answers.svg',
+					url: "answeringquestions"
 				},
 				{
 					name: "Reading Lists",
 					brief: "There's always too much to read, but we can help guide your learning path",
-					image: 'categories/readinglist.svg'
+					image: 'categories/readinglist.svg',
+					url: "readinglists"
 				},
 				{
 					name: "Socials",
 					brief: "Stay in the loop with news, feeds, and more",
-					image: 'categories/socials.svg'
+					image: 'categories/socials.svg',
+					url: "socials",
 				}
 			]
 		},
@@ -72,42 +81,50 @@
 				{
 					name: "Unionizing",
 					brief: "Help start or support your workplace union",
-					image: 'categories/unionizing.svg'
+					image: 'categories/unionizing.svg',
+					url: "unionizing"
 				},
 				{
 					name: "Campaigning",
 					brief: "Get help with running for public office",
-					image: 'categories/campaigning.svg'
+					image: 'categories/campaigning.svg',
+					url: "campaigning"
 				},
 				{
 					name: "Co-operatives",
 					brief: "Learn about starting or making change towards co-operatives",
-					image: 'categories/cooperatives.svg'
+					image: 'categories/cooperatives.svg',
+					url: "cooperatives"
 				},
 				{
 					name: "Financing",
 					brief: "Get help with personal or professional financing",
-					image: 'categories/finances.svg'
+					image: 'categories/finances.svg',
+					url: "financing"
 				},
 				{
 					name: "Recruiting",
 					brief: "Find tools to help find people to join your organization or compaign",
-					image: 'categories/recruiting.svg'
+					image: 'categories/recruiting.svg',
+					url: "recruiting"
 				},
 				{
 					name: "Community Organizing",
 					brief: "Find or start a community organization",
-					image: 'categories/community.svg'
+					image: 'categories/community.svg',
+					url: "communityorganizing"
 				},
 				{
 					name: "Legal Assistance",
 					brief: "Learn about your rights and options as a citizen",
-					image: 'categories/legal.svg'
+					image: 'categories/legal.svg',
+					url: "legaladvice"
 				},
 				{
 					name: "Mental Assistance",
 					brief: "Find resources to give your mind some assistance",
-					image: 'categories/mental.svg'
+					image: 'categories/mental.svg',
+					url: "mentalassistance"
 				}
 			]
 		},
@@ -119,7 +136,8 @@
 				{
 					name: "",
 					brief: "",
-					image: 'categories/terms.svg'
+					image: 'categories/terms.svg',
+					url: ""
 				},
 			]
 		},
@@ -131,22 +149,26 @@
 				{
 					name: "eBooks",
 					brief: "",
-					image: 'categories/ebook.svg'
+					image: 'categories/ebook.svg',
+					url: ""
 				},
 				{
 					name: "Audiobooks",
 					brief: "",
-					image: 'categories/audiobook.svg'
+					image: 'categories/audiobook.svg',
+					url: ""
 				},
 				{
 					name: "News sites",
 					brief: "",
-					image: 'categories/news.svg'
+					image: 'categories/news.svg',
+					url: ""
 				},
 				{
 					name: "Magazines",
 					brief: "",
-					image: 'categories/magazine.svg'
+					image: 'categories/magazine.svg',
+					url: ""
 				},
 			]
 		},
@@ -158,7 +180,8 @@
 				{
 					name: "",
 					brief: "",
-					image: 'categories/terms.svg'
+					image: 'categories/terms.svg',
+					url: ""
 				},
 			]
 		},
@@ -170,7 +193,8 @@
 				{
 					name: "",
 					brief: "",
-					image: 'categories/terms.svg'
+					image: 'categories/terms.svg',
+					url: ""
 				},
 			]
 		},
@@ -181,7 +205,15 @@
 <!-- Hero Section -->
 <Hero />
 
+<div id="categories-anchor"></div>
 <!-- Browse Categories -->
-<Categories categories={categories}/>
+<Categories categories={categories} />
 
 </div>
+
+<!-- <footer>
+	<h4>Image Attributions</h4>
+	<ul>
+		<li>Vectors and icons by <a href="https://soco-st.com/?ref=svgrepo.com" target="_blank">Soco St</a> in CC Attribution License via <a href="https://www.svgrepo.com/" target="_blank">SVG Repo</a></li>
+	</ul>
+</footer> -->
