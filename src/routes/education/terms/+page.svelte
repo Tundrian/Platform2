@@ -53,4 +53,4 @@ const tableSimple: TableSource = {
 {/if}
 
 
-<Table source={tableSimple} />
+<Table source={tableSimple} class="p-5"/>
