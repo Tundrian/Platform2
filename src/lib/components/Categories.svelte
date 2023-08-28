@@ -3,6 +3,7 @@
 		category: string;
 		brief: string;
 		imageURL: string;
+		url: string,
 		subcategory: {
 			name: string;
 			brief: string;
@@ -18,7 +19,7 @@
 <!-- Updated categories -->
 <div class="p-5 pb-24">
 	{#each categories as category}
-		<h2 class="text-2xl text-gray-700 dark:text-white font-bold mb-5 mt-10 ">{category.category}</h2>
+		<a href={category.url} ><h2 class="text-2xl text-gray-700 dark:text-white font-bold mb-5 mt-10 ">{category.category}</h2></a>
 		<div class="lg:grid lg:grid-cols-2 lg:gap-x-5">
 			{#each category.subcategory as subcategory}
 			<a href="{subcategory.url}">
