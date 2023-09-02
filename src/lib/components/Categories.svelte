@@ -2,12 +2,12 @@
 	interface Categories {
 		category: string;
 		brief: string;
-		imageURL: string;
+		imageURL?: string;
 		url: string,
 		subcategory: {
 			name: string;
 			brief: string;
-			image: string;
+			image?: string;
 			url: string;
 		}[];
 	}
