@@ -1,7 +1,8 @@
-<script lang="ts">
+<script lang="">
 	import Hero from '$lib/components/Hero.svelte';
 	import Categories from '$lib/components/Categories.svelte';
 	import { allCategories } from '$lib/data/categoryLists';
+
 </script>
 
 <div class="bg-white dark:bg-slate-800">
