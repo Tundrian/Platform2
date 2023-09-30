@@ -1,9 +1,9 @@
-import { supabase } from "$lib/supabaseClient";
+// import { supabase } from "$lib/supabaseClient";
 
-export async function load() {
-//   const { data } = await supabase.from("countries").select();
+// export async function load() {
+//   const { data } = await supabase.from("Terms").select();
 
 //   return {
-//     countries: data ?? [],
+//     terms: data ?? [],
 //   };
-}
+// }

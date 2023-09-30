@@ -15,4 +15,5 @@
 	</div>
 </section>
 
-<Categories categories={educationCategories} />
+
+<Categories categories={educationCategories} /> 

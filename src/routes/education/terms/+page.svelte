@@ -1,12 +1,12 @@
 <script lang="ts">
-	import Categories from "$lib/components/Categories.svelte";
+	// import Categories from "$lib/components/Categories.svelte";
 	
-	import { allCategories } from "$lib/data/categoryLists";
+	// import { allCategories } from "$lib/data/categoryLists";
 
 	// import { Autocomplete } from '@skeletonlabs/skeleton';
 	// import type { AutocompleteOption } from '@skeletonlabs/skeleton';
 	let inputDemo = '';
-
+	export let data;
 	// const flavorOptions: AutocompleteOption[] = [
 	// 	{ label: 'Vanilla', value: 'vanilla', keywords: 'plain, basic', meta: { healthy: false } },
 	// 	{ label: 'Chocolate', value: 'chocolate', keywords: 'dark, white', meta: { healthy: false } },
@@ -36,25 +36,25 @@
 	// 		url: string;
 	// 	}[];
 	// }
-	const categories: Categories = [
-		{
-			category: '',
-			brief: '',
-			url: '',
-			subcategory: [
-				{
-					name: 'term 1',
-					brief: 'this is a sample of a brief definition of term to be shown on the results table',
-					url: `/education/terms/123`
-				},
-				{
-					name: 'term 1',
-					brief: 'this is a sample of a brief definition of term to be shown on the results table',
-					url: '/'
-				},
-			]
-		}
-	];
+	// const categories: Categories = [
+	// 	{
+	// 		category: '',
+	// 		brief: '',
+	// 		url: '',
+	// 		subcategory: [
+	// 			{
+	// 				name: 'term 1',
+	// 				brief: 'this is a sample of a brief definition of term to be shown on the results table',
+	// 				url: `/education/terms/123`
+	// 			},
+	// 			{
+	// 				name: 'term 1',
+	// 				brief: 'this is a sample of a brief definition of term to be shown on the results table',
+	// 				url: '/'
+	// 			},
+	// 		]
+	// 	}
+	// ];
 
 </script>
 
@@ -72,4 +72,14 @@
 	</div>
 {/if} -->
 
-<Categories {categories}/>
+<!-- <Categories {categories}/> -->
+
+<ul class="border border-green-500 p-10">
+    {#each data.terms as term}
+      <li>
+		<p>{term.name}</p>
+		<p>{term.brief_description}</p>
+		<p>{term.full_description}</p>
+	</li>
+    {/each}
+  </ul>
