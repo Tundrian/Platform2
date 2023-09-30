@@ -1,6 +1,6 @@
 <script lang="ts">
 	// import Categories from "$lib/components/Categories.svelte";
-	
+
 	// import { allCategories } from "$lib/data/categoryLists";
 
 	// import { Autocomplete } from '@skeletonlabs/skeleton';
@@ -55,7 +55,6 @@
 	// 		]
 	// 	}
 	// ];
-
 </script>
 
 <input
@@ -75,11 +74,13 @@
 <!-- <Categories {categories}/> -->
 
 <ul class="border border-green-500 p-10">
-    {#each data.terms as term}
-      <li>
-		<p>{term.name}</p>
-		<p>{term.brief_description}</p>
-		<p>{term.full_description}</p>
-	</li>
-    {/each}
-  </ul>
+	{#each data.terms as term}
+		<li>
+			<p>{term.name}</p>
+			<p>{term.brief_description}</p>
+			{#each term.full_description.split('/n') as description_line}
+				<p class="mt-2">{description_line}</p>
+			{/each}
+		</li>
+	{/each}
+</ul>
