@@ -4,7 +4,11 @@
 
 </script>
 
+
+
+
 <section class="bg-white dark:bg-slate-800 ">
+
 	<div class="mx-auto max-w-screen-xl px-4 py-20 lg:flex lg:h-screen lg:items-center">
 		<div class="mx-auto max-w-xl text-center">
 			<h1 class="text-3xl font-extrabold sm:text-5xl text-slate-700 dark:text-slate-200">
